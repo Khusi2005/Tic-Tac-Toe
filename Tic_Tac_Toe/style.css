@@ -1,67 +1,80 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color:#082739;
+
+body {
+    background-color: #1E1E2F; 
     text-align: center;
-    color:#F9B642;
+    color: #ba1111; 
+    background-image: url('https://i.pinimg.com/736x/c2/47/4c/c2474c6f0a5c6d942628ac0b48ae3715.jpg');
+    background-size: cover; 
+    font-family: 'Arial', sans-serif; 
 }
-.container
-{
-    height:70vh;
-    display:flex;
+
+.container {
+    height: 70vh;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.game{
-    height:60vmin;
-    width:60vmin;
-    display:flex;
-    flex-wrap:wrap;
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:1.5vmin;
+    gap: 1.5vmin;
 }
-.box{
-    height:18vmin;
-    width:18vmin;
-    border-radius:1rem;
-    border:none;
-    box-shadow:0 0 1rem #e24c16a5;
-    font-size:8vmin;
-    color:#391018;
-    background-color:rgb(200, 200, 196);
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    font-size: 8vmin;
+    color: #3F3F3F; 
+    background-color: #F0F0F0; 
+    transition: transform 0.2s; 
 }
-#reset-btn{
-    padding:1rem;
-    font-size:1.25rem;
-    background-color:steelblue;
-    color: aliceblue;
-    border-radius:1rem;
-    border:none;
+
+.box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); 
 }
-.msg-container{
-    height:90vmin;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
+
+#reset-btn, #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color:rgb(233, 180, 111); 
+    color: white; 
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
-#new-btn{
-    padding:1rem;
-    font-size:1.25rem;
-    background-color:steelblue;
-    color: aliceblue;
-    border-radius:1rem;
-    border:none;
-    gap:4rem;
+
+.msg-container {
+    height: 90vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-#msg{
-    padding:10vmin;
-    color:rgba(240, 248, 255, 0.851);
-    font-size:5vmin;
+
+#msg {
+    padding: 10vmin;
+    color: rgba(240, 248, 255, 0.851);
+    font-size: 5vmin;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 1rem; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
 }
-.hide{
-    display:none;
-} 
+
+.hide {
+    display: none;
+}
